@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-size: 1.6rem; 
+    box-sizing: border-box;
+    background: url('time-wallpaper-23.jpg') no-repeat;
+    background-position: 90% 70%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.task-list {
+    background-color: #7c97f4;
+    padding: 2rem;
+    letter-spacing: .5px;
+    opacity: .9;
+    width: 50rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-list__heading {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.task-list__box {
+    line-height: 3rem;
+    padding: .5rem 0;
+    margin-bottom: 2rem;
+}
+
+input[type="text"] {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+label, input {
+    width: 100%;
+    height: 3rem;
+}
+
+.collection {
+    list-style: none;
+    text-align: center;
+}
+
+i {
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: limegreen;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn--dark {
+    background-color: orangered;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    .task-list {
+        width: 100%;
+        height: 100%;
+        justify-content: flex-start;
+        padding: 10rem 0;
+        text-align: center;
+    }
+    
+    .task-list__box {
+        margin-top: 4rem;
+    }
+    
+    input, .btn--dark {
+        width: 75%;  
+    }
+    
+    .btn--dark {
+        margin-left: 12.5%;
+    }
+    
+}
+
+@media (max-width: 300px) {
+    
+    .task-list {
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    
+    .task-list__box {
+        margin-top: 0;
+    }
+}
